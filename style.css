@@ -123,7 +123,25 @@ img {
     border-radius: 55%;
 }
 
-
+a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 
 footer {
   text-align: center;
@@ -132,4 +150,5 @@ footer {
   color: var(--muted);
   border-top: 1px solid var(--border);
   letter-spacing: .03em;
+
 }
