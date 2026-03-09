@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body style="background-color:#121212"> 
+<header>
+    <img src="logo.png" alt="logo">
+    <button class="menu-btn" id="menuBtn" aria-label="Valikko">
+      <span></span><span></span><span></span>
+    </button>
+</header>
+
+  <nav class="nav-drawer" id="navDrawer">
+    <a href="index.html" onclick="closeMenu()">Etusivu</a>
+    <a href="koulutustausta.html" onclick="closeMenu()">Koulutustausta</a>
+  </nav>
+  <div>
+<h1>Työkokemus</h1>
+<h2>IT-asiantuntija</h2>
+<h3>Valtori, Hämeenlinna. Loka 2024 - jatkuva</h3>
+<p>IT‑asiantuntija työtehtävät Valtorilla. IT‑tukea valtion viranomaisille liittyen tietokoneisiin, puhelimiin ja niiden tarvikkeisiin sekä käyttäjätunnuksiin ja ohjelmistoihin.</p>
+  
+<h2>Service Desk Specialist</h2>
+<h3>TietoEvry, Vaasa. Touko 2024 - Syys 2024</h3>
+<p>Service desk työtehtävät. IT‑tukea tietokoneisiin ja puhelimiin sekä niiden tarvikkeisiin,
+käyttäjätunnuksiin ja ohjelmistoihin.</p>
+
+<h2>Palvelupisteasiantuntija</h2>
+<h3>Istekki Oy, Jyväskylä. Helmi 2023 - Maalis 2024</h3>
+<p>Service desk työtehtävät Keski‑Suomen Hyvinvointialueella. IT‑tukea tietokoneisiin ja puhelimiin sekä
+niiden tarvikkeisiin, käyttäjätunnuksiin ja ohjelmistoihin.</p>
+
+<h2>Varastotyöntekijä</h2>
+<h3>Tammer Brands, Hämeenlinna. Elo 2020 - Syys 2022</h3>
+<p>Keräilytrukilla tuotteiden keräystä sekä tilausten pakkausta, sekä muita tehtäviä.</p>
+
+<h2>Harjoittelija</h2>
+<h3>Tokmanni, Hämeenlinna. Kesä 2018 - Heinä 2018</h3>
+<p>Tuotteiden hyllytystä sekä asiakaspalvelua.</p>
+
+</div>
+
+  <footer>© 2026</footer>
+<script>
+    const btn = document.getElementById('menuBtn');
+    const drawer = document.getElementById('navDrawer');
+    btn.addEventListener('click', () => {
+      const open = drawer.classList.toggle('open');
+      btn.classList.toggle('open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    function closeMenu() {
+      drawer.classList.remove('open');
+      btn.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  </script>
+    </body>
+</html>

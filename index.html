@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body style="background-color:#121212"> 
+<header>
+    <img src="logo.png" alt="logo">
+    <button class="menu-btn" id="menuBtn" aria-label="Valikko">
+      <span></span><span></span><span></span>
+    </button>
+</header>
+
+  <nav class="nav-drawer" id="navDrawer">
+    <a href="tyokokemus.html" onclick="closeMenu()">Työkokemus</a>
+    <a href="koulutustausta.html" onclick="closeMenu()">Koulutustausta</a>
+  </nav>
+
+    <h1>Anna Alhainen</h1>
+        <div><p>Hei ja tervetuloa minun portfolio sivulle. </p>
+        <img src="omakuva.png" style="width: 30%; border-radius: 50%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 16px;" alt="omakuva">
+
+        <p>   Nimeni on Anna, opiskelen tällä hetkellä Tradenomiksi Haaga-Heliassa ja työskentelen samanaikaisesti Valtorilla IT-asiantuntijana.</p>
+        <p>Olen edellisissä töissä oppinut sietämään hyvin kiirettä sekä paineen alla työskentelyä ja minulta onnistuu niin tiimi- kuin itsenäinenkin työskentely. Tavoitteenani on erityisesti IT-alan taitojen kehittäminen, joten innokkuutta ja motivaatiota löytyy uusien järjestelmien sekä sovellusten opettelemiseen.</p>
+
+        <p><a href="mailto:anna.alhainen@gmail.com">Ota yhteyttä</a></p>
+        <p><a href="https://www.linkedin.com/in/anna-alhainen-0970b7287/" target="_blank">LinkedIn profiili</a></p>
+    
+        </div>
+<footer>© 2026</footer>
+<script>
+    const btn = document.getElementById('menuBtn');
+    const drawer = document.getElementById('navDrawer');
+    btn.addEventListener('click', () => {
+      const open = drawer.classList.toggle('open');
+      btn.classList.toggle('open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    function closeMenu() {
+      drawer.classList.remove('open');
+      btn.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  </script>
+    </body>
+</html>
